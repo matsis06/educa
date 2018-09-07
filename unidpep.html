@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="http://protostrap.com/Assets/gv/css/gv.bootstrap-form.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    
+</head>
+
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+
+            <form action="../submit" id="formentry" class="form-horizontal" role="form" data-parsley-validate novalidate>
+                <div class="container-fluid shadow">
+                    <div class="row">
+                        <div id="valErr" class="row viewerror clearfix hidden">
+                            <div class="alert alert-danger">Oops! Seems there are some errors..</div>
+                        </div>
+                        <div id="valOk" class="row viewerror clearfix hidden">
+                            <div class="alert alert-success">Yay! ..</div>
+                        </div>
+
+                        
+                                    <div class="row">
+                                        <div class="col-md-12"><div class="form-group brdbot">
+			    <h3>Planificador del PEP</h3>
+			    <div class="controls col-sm-9">
+                    
+                <p id="field1" data-default-label="Header" data-default-is-header="true" data-control-type="header"></p><span id="errId1" class="error"></span></div>
+                
+		</div></div>
+                                    </div>
+                                <div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field59">Curso/grado<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field59" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId2"><span id="errId2" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field61">Colegio</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field61" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field63">T?tulo<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field63" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId4"><span id="errId4" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field65">Fecha</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control k-input" style="width: 100%;"><span class="k-picker-wrap k-state-default"><input id="field65" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field65_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield65" style="width: 100%;" data-parsley-errors-container="#errId5"><span unselectable="on" class="k-select" role="button" aria-controls="field65_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId5" class="error"></span></div>
+                
+		</div></div><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field60">Edades<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field60" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId6"><span id="errId6" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field62">C?digo del colegio<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field62" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId7"><span id="errId7" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field64">Maestro(a)<span class="req"> *</span></label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field64" type="text" class="form-control k-textbox" data-role="text" required="required" data-parsley-errors-container="#errId8"><span id="errId8" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field67">Untitled</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="field67" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId9"><span id="errId9" class="error"></span></div>
+                
+		</div></div></div><div class="panel-group" id="accordion2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody4" id="accHeading4" class="collapsed">1. ?Cu?l es nuestro objetivo?</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody4" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <p>Indagar sobre</p>
+			    
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field78">Tema transdiciplinario<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field78" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId10"></textarea><span id="errId10" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field80">Idea central<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field80" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId11"></textarea><span id="errId11" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <p>Actividades de evaluaci?n sumativa</p>
+			    
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field82">?De qu? forma se puede evaluar la comprensi?n de los alumnos de la idea central? ?Qu? indicios, incluidas las acciones iniciadas por los alumnos demostrar?n dicha comprensi?n?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field82" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId12"></textarea><span id="errId12" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody49" id="accHeading49" class="collapsed">2. ?Qu? queremos aprender?</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody49" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <label class="control-label-left" for="field83">?Cu?les son los conceptos clave  (forma, funci?n, causa, cambio, conexi?n, perspectiva, responsabilidad, reflexi?n) en los que se har? hincapi? en esta indagaci?n?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field83" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId13"></textarea><span id="errId13" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field84">?Qu? l?neas de indagaci?n definir?n el alcance de la indagaci?n sobre la idea central?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field84" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId14"></textarea><span id="errId14" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field85">?Qu? preguntas formular? el maestro o qu? est?mulos presentar? para impulsar la indagaci?n?</label>
+			    <div class="controls">
+                    
+                <textarea id="field85" rows="3" class="form-control k-textbox" data-role="textarea" data-parsley-errors-container="#errId15"></textarea><span id="errId15" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody40" id="accHeading40" class="collapsed">3. ?C?mo podemos saber lo que hemos aprendido?</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody40" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <p>Esta secci?n se debe utilizar junto con la secci?n titulada "?cu?l puede ser la mejor manera de aprender?"</p>
+			    
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field87">?De qu? formas podemos evaluar los conocimientos y habilidades previas? ?Qu? indicios lo demostrar?n?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field87" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId16"></textarea><span id="errId16" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field88">?De qu? formas podemos evaluar el aprendizaje del alumno en relaci?n con las l?neas de indagaci?n? ?Qu? indicios lo demostrar?n?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field88" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId17"></textarea><span id="errId17" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody32" id="accHeading32" class="collapsed">4. ?Cu?l puede ser la mejor manera de aprender?</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody32" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <label class="control-label-left" for="field89">?Qu? experiencias de aprendizaje ha sugerido el maestro, o los alumnos, para fomentar la participaci?n plena de los alumnos en la indagaci?n y abordar las preguntas que la impulsan?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field89" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId18"></textarea><span id="errId18" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field90">?Qu? oportunidades ofrecer? la indagaci?n para desarrollar las habilidades transdisciplinarias y las cualidades del perfil de la comunidad de aprendizaje del IB?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field90" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId19"></textarea><span id="errId19" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody25" id="accHeading25" class="collapsed">5. ?Qu? recursos necesitamos obtener?<div class="accordion-toolbar"><span class="glyphicon glyphicon-cog"></span></div></a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody25" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <label class="control-label-left" for="field91">?De qu? recursos humanos, instalaciones f?sicas, material audiovisual, literatura relacionada, m?sica, materiales de arte, programas inform?ticos, etc. ser? necesario disponer?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field91" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId20"></textarea><span id="errId20" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field92">?C?mo se utilizar?n los recursos que ofrece el aula, el entorno local y la comunidad para apoyar la indagaci?n?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field92" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId21"></textarea><span id="errId21" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody19" id="accHeading19" class="collapsed">6. ?En qu? medida hemos logrado nuestro objetivo?</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody19" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <label class="control-label-left" for="field93">Eval?e los resultados de la indagaci?n proporcionando pruebas de la comprensi?n de la idea central por parte de los alumnos. Se deben incluir las reflexiones de todos los maestros que participaron en la planificaci?n y ense?anza de la indagaci?n.<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field93" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId22"></textarea><span id="errId22" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field94">Indique c?mo se podr?an mejorar la actividad o actividades de evaluaci?n de manera que brinden informaci?n m?s precisa acerca de la comprensi?n de la idea central por parte del alumno<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field94" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId23"></textarea><span id="errId23" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field95">?Qu? indicios demostraron si se establecieron conexiones entre la idea central y el tema transdisciplinario?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field95" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId24"></textarea><span id="errId24" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody14" id="accHeading14" class="collapsed">7. ?En qu? medida hemos incluido los elementos del P?P?</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody14" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <p>?Qu? experiencias de aprendizaje permitieron a los alumnos:</p>
+			    
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field97">desarrollar la comprensi?n de los conceptos indicados en la secci?n “?Qu? queremos aprender?”<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field97" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId25"></textarea><span id="errId25" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field98">demostrar el aprendizaje y la aplicaci?n de habilidades transdisciplinarias espec?ficas?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field98" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId26"></textarea><span id="errId26" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field99">desarrollar atributos y actitudes espec?ficos del perfil de la comunidad de aprendizaje del IB?<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field99" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId27"></textarea><span id="errId27" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field100">Explique por qu? eligi? cada una de ellas.<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field100" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId28"></textarea><span id="errId28" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody10" id="accHeading10" class="collapsed">8. ?Qu? indagaciones iniciaron los alumnos como consecuencia del aprendizaje?</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" id="accBody10" style="height: 0px;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <label class="control-label-left" for="field101">Registre diversos tipos de indagaciones iniciadas por los alumnos y preguntas formuladas por ellos, y destaque las que se hayan incorporado a la ense?anza y el aprendizaje.<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field101" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId29"></textarea><span id="errId29" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <p>En este punto, se debe volver a la secci?n “?Qu? queremos aprender?” y se?alar las preguntas o est?mulos planteados por el maestro que resultaron m?s eficaces para impulsar las indagaciones.</p>
+			    
+                
+		</div><div class="form-group">
+			    <p>?Qu? acciones realizaron los alumnos como consecuencia del aprendizaje?</p>
+			    
+                
+		</div><div class="form-group">
+			    <label class="control-label-left" for="field104">Registre las acciones iniciadas por los alumnos y llevadas a cabo en grupo o individualmente que muestran sus capacidades de reflexi?n, elecci?n y acci?n<span class="req"> *</span></label>
+			    <div class="controls">
+                    
+                <textarea id="field104" rows="3" class="form-control k-textbox" data-role="textarea" required="required" data-parsley-errors-container="#errId30"></textarea><span id="errId30" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div><div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#accBody7" id="accHeading7" class="">9. Comentarios del maestro</a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" id="accBody7" style="height: auto;">
+                            <div class="panel-body">
+                                
+                            <div class="form-group">
+			    <label class="control-label-left" for="field105"></label>
+			    <div class="controls">
+                    
+                <textarea id="field105" rows="3" class="form-control k-textbox" data-role="textarea" data-parsley-errors-container="#errId31"></textarea><span id="errId31" class="error"></span></div>
+                
+		</div></div>
+                        </div>
+                    </div>
+
+
+                </div></div></div>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
+    <script src="http://protostrap.com/Assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.js" type="text/javascript"></script>
+
+    <script src="http://protostrap.com/Assets/inputmask/js/jquery.inputmask.js" type="text/javascript"></script>
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+    <script src="http://protostrap.com/Assets/parsely/parsley.extend.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/parsely/2.0/parsley.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
+</body>
+</html>
